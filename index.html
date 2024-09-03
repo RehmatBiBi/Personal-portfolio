@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f0f2f5;
+            line-height: 1;
+        }
+        header {
+            background: linear-gradient(135deg, #050505, #0a0a0a);
+            color: #fff;
+            padding: 0px;
+            text-align:center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            height: 80px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f0f2f5;
+        }
+        .hero {
+            background: url(https://comicsplanet.ru/wp-content/uploads/2024/02/1614407995_35-p-biznes-fon-temnii-44-scaled.jpg) no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px;
+            margin-top: 80px;
+            border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+            box-sizing: border-box;
+           
+        }
+        .hero h2 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 20px auto 0;
+        }
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .intro h2 {
+            color: #4a90e2;
+            font-size: 2.5rem;
+        }
+        .projects {
+            background: #fff;
+            padding: 60px 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: hsl(212, 72%, 59%);
+            font-size: 2rem;
+        }
+        .project {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+        }
+        .project:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+   
+        .project h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: hsl(212, 72%, 59%);;
+        }
+        .project p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        .contact {
+            background: #fff;
+            padding: 60px 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4a90e2;
+            font-size: 2rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+        form button {
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #4a90e2;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        form button:hover {
+            background: #357abd;
+            transform: scale(1.05);
+        }
+        footer {
+            background: linear-gradient(135deg, #0a0a0a, #000000);
+            color: #fff;
+            text-align: center;
+            padding: 7px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#intro">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I'm a passionate web developer dedicated to crafting beautiful and functional digital experiences. Explore my work and get in touch!</p>
+    </section>
+    
+    <section id="intro" class="intro">
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer with a passion for creating engaging and interactive websites. My journey in web development has been both exciting and fulfilling. Take a look at my projects and feel free to reach out!</p>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Network Expertise</h3>
+            <p>Network Expertise is a website dedicated to providing detailed information about celebrities' net worth. It features an extensive database with up-to-date figures and biographies of various celebrities, helping users get insights into their financial status.</p>
+        </div>
+        <div class="project">
+            <h3>Beauty Winsome</h3>
+            <p>Beauty Winsome is an online platform focused on beauty and wellness. It offers a range of guidelines, tips, and articles about beauty trends, skincare routines, and makeup techniques, providing users with valuable insights to enhance their personal beauty regimen.</p>
+        </div>
+        <div class="project">
+            <h3>Net Worth Beacon</h3>
+            <p>Net Worth Beacon is another website dedicated to tracking and showcasing the net worth of prominent individuals. It provides comprehensive details and updates on various personalities, offering users an easy way to track changes and trends in their financial statuses.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <br>
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                alert(`Thank you for your message, ${name}!`);
+                document.getElementById('contact-form').reset();
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
